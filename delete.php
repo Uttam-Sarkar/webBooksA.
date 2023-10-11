@@ -10,10 +10,10 @@
         }
         th, td {
             text-align: center;
-            background-color: #96D4D4;
+            background-color: #EF5353;
         }
         {
-            background-color: #96D4D4;
+            background-color: #EF5353;
         }
     </style>
 </head>
