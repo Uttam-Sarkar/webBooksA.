@@ -20,6 +20,8 @@
     <form>
          <button formaction="addBooks.php">Add new book</button>
          <button formaction="delete.php">Delete book</button>
+         <label for="search">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+         <button formaction="search.php">Search</button>
     </form>
     
 <table>
@@ -40,7 +42,12 @@
     <tr><td> <?php echo ($key+1) ?></td>
         <td> <?php echo  $books[$key]['title'] ?> </td>
         <td> <?php echo  $books[$key]['author'] ?> </td>
-        <td> <?php echo  $books[$key]['available'] ?> </td>
+        <td> <?php
+            if($books[$key]['available']){
+                echo "Yes";
+            }
+            else echo "No";
+        ?> </td>
         <td> <?php echo  $books[$key]['pages'] ?> </td>    
         <td> <?php echo  $books[$key]['isbn'] ?></td>    
     </tr>      
