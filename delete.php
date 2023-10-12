@@ -12,13 +12,11 @@
             text-align: center;
             background-color: #EF5353;
         }
-        {
-            background-color: #EF5353;
-        }
     </style>
 </head>
 <body>
     <h1>Delete Book</h1>
+    To delete a Book Press<b>"<u> Delete</u>" </b>
 <table>
     <tr>
         <th>Id no.</th>

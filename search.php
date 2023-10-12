@@ -10,7 +10,7 @@
         }
         th, td {
             text-align: center;
-            background-color: #96D4D4;
+            background-color: #816DE0;
         }
     </style>
 </head>
@@ -47,7 +47,7 @@
 // echo $searchText;
     foreach($books_arr as $key => $value){
         
-        if(($key+1)==$searchText || $books_arr[$key]['title']==$searchText || $books_arr[$key]['author']==$searchText || $books_arr[$key]['pages']==$searchText || $books_arr[$key]['isbn']==$searchText){
+        if(($key+1)==$searchText || strpos($books_arr[$key]['title'],$searchText)!="" || strpos($books_arr[$key]['author'],$searchText) || $books_arr[$key]['pages']==$searchText || $books_arr[$key]['isbn']==$searchText){
             // echo " ".$searchText ;
             // echo " ".($key+1) ;
             // echo " ".$books_arr[$key]['title'] ;
